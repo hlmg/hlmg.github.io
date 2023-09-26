@@ -9,7 +9,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Examples', link: '/Misc/markdown-examples' }
     ],
     sidebar: getSidebar(),
     socialLinks: [
@@ -25,5 +25,7 @@ function getSidebar() {
     documentRootPath: '/docs',
     useTitleFromFileHeading: true,
     collapsed: true,
+    collapseDepth: 2,
+    sortMenusOrderNumerically: true
   })
 }
