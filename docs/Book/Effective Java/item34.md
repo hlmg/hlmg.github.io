@@ -137,14 +137,14 @@ public enum Operation {
     TIMES((x, y) -> x * y),
     DIVIDE((x, y) -> x / y);
 
-    final BinaryOperator<Double> operator;
+    final DoubleBinaryOperator operator;
 
-    Operation(BinaryOperator<Double> operator) {
+    Operation(DoubleBinaryOperator operator) {
         this.operator = operator;
     }
 
     public double apply(double x, double y) {
-        return this.operator.apply(x, y);
+        return this.operator.applyAsDouble(x, y);
     }
 }
 ```
