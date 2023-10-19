@@ -13,7 +13,7 @@ export default defineConfig({
     ],
     sidebar: getSidebar(),
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/hlmg' }
     ],
     outline: "deep"
   }
